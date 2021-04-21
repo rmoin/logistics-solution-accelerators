@@ -1,3 +1,5 @@
+[image1]: FactoryLogistics.gif "Trained Agent"
+
 # Factory Logistics
 
 
@@ -10,6 +12,9 @@ The Logistics and Supply Chain solution accelerators can help you manage logisti
 - Minimize supply-chain disruptions and adapt to changing customer demands
 
 AI Agent has a unique ability to help you optimize competing factors for efficiency and efficacy.
+
+
+![Trained Agent][image1]
 
 
 This will deploy a solution accelerator using a UI by clicking the button below:
