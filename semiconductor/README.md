@@ -10,4 +10,11 @@ Factory Logistics is a solution accelerator that focuses on training an AI Agent
 
 The AnyLogic simulation models a factory floor that can be run as-is or customized to meet your specific business requirements. The Factory Logistics solution accelerator includes:
 
+- A new workspace created in cloud subscription of your choice.
+- A pre-designed, customizable activity-based costing analysis (ABCA) model in AnyLogic that provides a virtual environment for the AI Agent to learn in.
+- A virtual machine (VM) created under your subscription that you can use to run the simulation model
+- Network Interface
+- Network Security Group
+- Virtual Network
+- Public IP Address
 
