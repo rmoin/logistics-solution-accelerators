@@ -1,7 +1,7 @@
 # Chemical Process solutions
 
 
-Chemical Process solution accelerators from Project Bonsai can help you manage commercial chemical processes and mitigate challenges using AI:
+Chemical Process solution accelerators can help you manage commercial chemical processes and mitigate challenges using AI:
 
 - Control sequence feed quantities
 - Minimize the transition time between products
