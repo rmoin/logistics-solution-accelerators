@@ -15,4 +15,5 @@ Solution accelerators are also fully customizable so you can tailor the simulato
 ## Supported industries and use cases
 Solution accelerators are categorized according to the associated industry segment. Accelerators with the potential for cross-industry application are included under all relevant industries. 
 
+## Deep Reinforcement Learning
 Reinforcement learning algorithms are able to understand and respond to dynamic environments, and their decisions can be game-changing for businesses operating complex distribution networks. 
