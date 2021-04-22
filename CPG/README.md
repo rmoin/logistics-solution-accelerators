@@ -2,10 +2,6 @@
 
 # Logistics and Supply Chain Solution
 
-Manufacturers optimize their delivery tactics to maximize profit and minimize product wait times. 
-
-When networks of manufacturing facilities and distributors are spread across a large area, they sometimes struggle to manage deliveries. They use simulation models to explore cost-effective ways to adjust deliveries. In those simulations, reinforcement learning can surface the best possible routes and decisions quickly.
-
 The Logistics and Supply Chain solution accelerators can help you manage logistics and supply chain systems and mitigate challenges using AI:
 
 - Design and implement a sustainable and resilient supply chain
@@ -19,6 +15,9 @@ AI Agent has a unique ability to help you optimize competing factors for efficie
 
 ![Trained Agent][image1]
 
+Manufacturers optimize their delivery tactics to maximize profit and minimize product wait times. 
+
+When networks of manufacturing facilities and distributors are spread across a large area, they sometimes struggle to manage deliveries. They use simulation models to explore cost-effective ways to adjust deliveries. In those simulations, reinforcement learning can surface the best possible routes and decisions quickly.
 
 This will deploy a solution accelerator using a UI by clicking the button below:
 
