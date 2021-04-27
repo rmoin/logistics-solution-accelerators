@@ -1,0 +1,35 @@
+Chicago_is_open: Number.Int8<0..1>,
+Pittsburg_is_open: Number.Int8<0..1>,
+Nashville_is_open: Number.Int8<0..1>,
+
+Chicago_util_trucks: number<0..1>,
+Pittsburg_util_trucks: number<0..1>,
+Nashville_util_trucks: number<0..1>,
+
+Chicago_inventory_level: number<0..30000>,
+Pittsburg_inventory_level: number<0..30000>,
+Nashville_inventory_level: number<0..30000>,
+
+Chicago_orders_queueing: number<0 .. 100>,
+Pittsburg_orders_queueing: number<0 .. 100>,
+Nashville_orders_queueing: number<0 .. 100>,
+
+Chicago_production_rate: number<50 .. 80>,
+Pittsburg_production_rate: number<50 .. 80>,
+Nashville_production_rate: number<50 .. 80>,
+
+# technically, all of the following can be 'infinity' if no products completed yet
+# we set them to -1, as an indicator. otherwise 0 is the minimum value
+Chicago_average_turnaround: number<-1 .. 500>,
+Pittsburg_average_turnaround: number<-1 .. 500>,
+Nashville_average_turnaround: number<-1 .. 500>,
+
+Chicago_cost_per_product: number<-1 .. 4000000>,
+Pittsburg_cost_per_product: number<-1 .. 4000000>,
+Nashville_cost_per_product: number<-1 .. 4000000>,
+
+overall_average_turnaround: number<-1 .. 4000000>,
+overall_average_cost_per_product: number<-1 .. 4000000>,
+
+#based on model time
+time: number<0 .. 800>
