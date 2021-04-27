@@ -1,3 +1,7 @@
+
+## PRODUCT DELIVERY PARAMETERS
+
+# Whether manufacturing facility is open or not
 Chicago_is_open: Number.Int8<0..1>,
 Pittsburg_is_open: Number.Int8<0..1>,
 Nashville_is_open: Number.Int8<0..1>,
@@ -6,6 +10,7 @@ Chicago_util_trucks: number<0..1>,
 Pittsburg_util_trucks: number<0..1>,
 Nashville_util_trucks: number<0..1>,
 
+# Inventory level at each manufacturing location
 Chicago_inventory_level: number<0..30000>,
 Pittsburg_inventory_level: number<0..30000>,
 Nashville_inventory_level: number<0..30000>,
@@ -14,12 +19,14 @@ Chicago_orders_queueing: number<0 .. 100>,
 Pittsburg_orders_queueing: number<0 .. 100>,
 Nashville_orders_queueing: number<0 .. 100>,
 
+# Production rate of each facility
 Chicago_production_rate: number<50 .. 80>,
 Pittsburg_production_rate: number<50 .. 80>,
 Nashville_production_rate: number<50 .. 80>,
 
 # technically, all of the following can be 'infinity' if no products completed yet
 # we set them to -1, as an indicator. otherwise 0 is the minimum value
+# Average waiting time for orders placed at each manufacturer
 Chicago_average_turnaround: number<-1 .. 500>,
 Pittsburg_average_turnaround: number<-1 .. 500>,
 Nashville_average_turnaround: number<-1 .. 500>,
@@ -28,8 +35,33 @@ Chicago_cost_per_product: number<-1 .. 4000000>,
 Pittsburg_cost_per_product: number<-1 .. 4000000>,
 Nashville_cost_per_product: number<-1 .. 4000000>,
 
+# Average waiting time for all manufacturing facilities
 overall_average_turnaround: number<-1 .. 4000000>,
 overall_average_cost_per_product: number<-1 .. 4000000>,
 
 #based on model time
 time: number<0 .. 800>
+
+
+## HYPERPARAMETERS - DDPG Algorithm
+
+## For Experience Replay
+BUFFER_SIZE = int(1e6)  # replay buffer size
+BATCH_SIZE = 128         # minibatch size
+
+## For Fixed-Q Target
+TAU = 1e-3              # for soft update of target parameters
+UPDATE_EVERY = 20       # how often to update the network. 
+UPDATE_TIMES = 10       # and how many times to update
+
+# For Cumulative Reward
+GAMMA = 0.99            # discount factor
+
+## For Q Network
+LR_ACTOR = 1e-3         # learning rate of the actor
+LR_CRITIC = 1e-3        # learning rate of the critic
+
+WEIGHT_DECAY = 0        # L2 weight decay
+
+OU_SIGMA = 0.2          # Ornstein-Uhlenbeck noise parameter
+OU_THETA = 0.15         # Ornstein-Uhlenbeck noise parameter
