@@ -43,10 +43,12 @@ overall_average_cost_per_product: number<-1 .. 4000000>,
 time: number<0 .. 800>
 
 
-## HYPERPARAMETERS - DDPG Algorithm
+## HYPERPARAMETERS 
+
+Algorithm = "DDPG"        # APEX, PPO, SAC
 
 ## For Experience Replay
-BUFFER_SIZE = int(1e6)  # replay buffer size
+BUFFER_SIZE = int(1e6)   # replay buffer size
 BATCH_SIZE = 128         # minibatch size
 
 ## For Fixed-Q Target
